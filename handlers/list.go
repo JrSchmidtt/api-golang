@@ -8,10 +8,10 @@ import (
 )
 
 func List(w http.ResponseWriter, r *http.Request){
-	todos, err := models.GetAll()
+	todo, err := models.GetAll()
 	if err != nil {
 		log.Printf("Erro : %v", err)
 	}
-	w.Header().Set("Content-Type", "application/json")
-	json.NewDecoder(w).Encode(todos)
+	w.Header().Add("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(todo)
 }
