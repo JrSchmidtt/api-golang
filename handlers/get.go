@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"postgressql/models"
 	"strconv"
+	"github.com/go-chi/chi/v5"
 )
 
 func Get(w http.ResponseWriter, r *http.Request){
