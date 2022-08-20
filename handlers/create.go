@@ -30,6 +30,7 @@ func Create(w http.ResponseWriter, r *http.Request){
 			"Message": fmt.Sprintf("Inserido com sucesso ID: %d", id),
 		}
 	}
+	
 	w.Header().Add("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(resp)
 }
