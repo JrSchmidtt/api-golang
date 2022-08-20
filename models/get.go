@@ -2,7 +2,7 @@ package models
 
 import "postgressql/db"
 
-func Get(id int) (todo Todo, err error){
+func Get(id int64) (todo Todo, err error) {
 	conn, err := db.OpenConnection()
 	if err != nil {
 		return
