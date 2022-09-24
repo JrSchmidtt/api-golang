@@ -1,8 +1,5 @@
 # api-postgresql Golang Boilerplate
 
-https://www.youtube.com/watch?v=MD7b-iQMC24&ab_channel=AprendaGolang
-
-
 ## 1 - Criando abiente para Desenvolvimento local
 
 1.1 - Criando container docker com postgres:
